@@ -44,9 +44,14 @@
 	padding: 1rem 2rem 1.15rem;
   text-transform: uppercase;
   cursor: pointer;
-  color: #a3cc0f;
+  
 	min-width: 80px;
 	margin: auto;
+}
+
+.li-class a{
+  text-decoration: none;
+  color: #a3cc0f;
 }
 
 .li-class:hover {
