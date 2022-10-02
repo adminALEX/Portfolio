@@ -20,6 +20,7 @@ position: relative;
 }
 .property-card
 {
+  filter:brightness(1.2);
   height:75vh;
   width:50vh;
   display:-webkit-box;
@@ -129,10 +130,11 @@ position: relative;
   cursor:pointer;
 }
 .content{
-    
+    padding-right: 20px;
     font-family: 'Poppins', sans-serif;
     line-height: 35px;
     font-size: larger;
+    text-align: justify;
     pointer-events: none;
     overflow: hidden;
     margin-top: 10%;
@@ -157,47 +159,66 @@ position: relative;
     opacity: 1;
 }
 
-/* Links Styling starts */
 
+/* Font-awesome Styling */
+.fa-10x{
+    font-size: 12em !important;
+}
+/* Links Styling starts */
 .links{
     position: absolute;
     min-height: 100vh;
     min-width: 150vh;
+    filter:brightness(0.5);
 }
-.links i:nth-child(1){
-    position: relative;
-    left: 100px;
-    top:100px;
-}
+
 .links i:nth-child(2){
     position: relative;
-    left: 100px;
-    top:50px;
+    left: 200px;
+    top:350px;
+    transform: rotate(20deg);
 }
 .links i:nth-child(3){
     position: relative;
-    left: 100px;
-    top:50px;
+    left: -500px;
+    top:500px;
+    transform: rotate(-10deg);
 }
 .links i:nth-child(4){
     position: relative;
     float: right;
-    top:700px;
+    top:450px;
+    transform: rotate(8deg);
+
 }
 .links i:nth-child(5){
     position: relative;
-    top:180px;
-    left: 100px;
+    top:10px;
+    left: -300px;
+    transform: rotate(40deg);
+
 }
 .links i:nth-child(6){
     position: relative;
-    top:10px;
+    top:150px;
+    left: -80px;
     float: left;
+    transform: rotate(90deg);
+
 }
 .links i:nth-child(7){
     position: relative;
-    top:450px;
-    left: 100px;
+    top:350px;
+    left: 140px;
+    transform: rotate(-45deg);
+
+}
+.links i:nth-child(8){
+    position: relative;
+    top:0px;
+    left: 22    0px;
+    transform: rotate(45deg);
+
 }
 /* .links{
     position: relative;
