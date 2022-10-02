@@ -69,6 +69,7 @@ position: relative;
 .property-description
 {
   background-color:transparent;
+  width: 100%;
   height:12em;
   color:bisque;
   position:absolute;
@@ -82,6 +83,8 @@ position: relative;
 
 .property-description h2{
     font-family: 'Silkscreen', cursive;
+    padding-left: auto;
+    padding-right:auto ;
 }
 
 /* Social Icons */
