@@ -11,6 +11,8 @@ section{
     transition: all 1.2s;
 }
 .show h1{
+    top:0;
+    position: absolute;
     transform: scale(2);
     transition: all 1.2s;
 }
