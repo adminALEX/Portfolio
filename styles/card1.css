@@ -1,3 +1,4 @@
+
 .center
 {
 position: relative;
@@ -43,8 +44,8 @@ position: relative;
 /* Top Half of card, image. */
 .property-card:hover{
     opacity: 1;
-    filter:blur(6px);
-    transition-delay:1s;
+    filter:brightness(0.5) blur(6px);
+    transition-delay:0.6s;
 }
 
 .property-image
@@ -77,6 +78,10 @@ position: relative;
   transition:all 0.4s cubic-bezier(0.1, 0.1, 0.1, 1);
   padding: 0.5em 1em;
   text-align:center;
+}
+
+.property-description h2{
+    font-family: 'Silkscreen', cursive;
 }
 
 /* Social Icons */
@@ -121,9 +126,14 @@ position: relative;
   cursor:pointer;
 }
 .content{
+    
+    font-family: 'Poppins', sans-serif;
+    line-height: 35px;
+    font-size: larger;
     pointer-events: none;
     overflow: hidden;
-    margin-top: 14%;
+    margin-top: 10%;
+    max-width: 45vh;
     position:absolute;   
 }
 
@@ -132,9 +142,7 @@ position: relative;
     z-index: -1;
 }
 .content ul{
-    list-style-type: none;
-    text-decoration: none;
-    top:10px;
+    color:rgb(255, 246, 246);
     left:10px;
     transition: all 1s;
 }
@@ -145,13 +153,12 @@ position: relative;
     transition-delay: 1s;
     opacity: 1;
 }
-.details li{
-    color:white;
-    font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+@media (max-width:1500px) {
+    .content{
+        margin-top: 14%;
+    }
 }
-
-
 @media (max-width:1200px) {
     .content{
         margin-top:20%;
@@ -159,17 +166,29 @@ position: relative;
 }
 
 @media (max-width:800px) {
+    .ul-class{
+        letter-spacing: 2px;
+    }
     .content{
         margin-top:30%;
     }
 }
 @media (max-width:600px) {
+
     .content{
         margin-top:40%;
     }
 }
 @media (max-width:400px) {
+    .ul-class{
+        letter-spacing: 2px;
+    }
     .content{
         margin-top:50%;
+    }
+}
+@media(max-width:100px){
+    .ul-class{
+        letter-spacing: 1px;
     }
 }
