@@ -58,7 +58,7 @@ position: relative;
   -webkit-transition:all 0.4s cubic-bezier(0.1, 0.1, 0.1, 1);
   -o-transition:all 0.4s cubic-bezier(0.1, 0.1, 0.1, 1);
   transition:all 0.4s cubic-bezier(0.1, 0.1, 0.1, 1);
-  background-image:url('../assets/me-3.png');
+  /* background-image:url('../assets/me-3.png'); */
   background-size:cover;
   background-repeat:no-repeat;
   border-radius: 3%;
@@ -157,6 +157,78 @@ position: relative;
     opacity: 1;
 }
 
+/* Links Styling starts */
+
+.links{
+    position: absolute;
+    min-height: 100vh;
+    min-width: 150vh;
+}
+.links i:nth-child(1){
+    position: relative;
+    left: 100px;
+    top:100px;
+}
+.links i:nth-child(2){
+    position: relative;
+    left: 100px;
+    top:50px;
+}
+.links i:nth-child(3){
+    position: relative;
+    left: 100px;
+    top:50px;
+}
+.links i:nth-child(4){
+    position: relative;
+    float: right;
+    top:700px;
+}
+.links i:nth-child(5){
+    position: relative;
+    top:180px;
+    left: 100px;
+}
+.links i:nth-child(6){
+    position: relative;
+    top:10px;
+    float: left;
+}
+.links i:nth-child(7){
+    position: relative;
+    top:450px;
+    left: 100px;
+}
+/* .links{
+    position: relative;
+
+}
+.links i{
+    position: absolute;
+}
+
+.links i:nth-child(1){
+    top: 100px;
+}
+
+.links i:nth-child(2){
+    top: 100px;
+}
+
+.links i:nth-child(3){
+    top: 100px;
+}
+
+.links i:nth-child(4){
+    top: 100px;
+}
+
+.links i:nth-child(5){
+    top: 100px;
+} */
+/* Links styling ends */
+
+/* Media Query */
 @media (max-width:1500px) {
     .content{
         margin-top: 14%;

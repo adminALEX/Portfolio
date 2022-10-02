@@ -21,7 +21,7 @@ Description: A mini desktop application which is similar to the traditional "Con
 Technologies: JavaFX, Java, Gradle, JSwing.
 
 -----------------------------------------------
-Core Java Project
+Core Java application
 Title:Fast Fingers
 Description: An application where we can practice and develop our typing skills.
 Technologies: Java, JSwing, Java AWT

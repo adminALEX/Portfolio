@@ -8,7 +8,6 @@
     margin-right: 40px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
     transition-property: all smooth;
-    
 }
 
 .project img{
@@ -35,19 +34,18 @@
 .container {
     position: absolute;
     height: 600px;
-    width: 900px;
-    top: 60px;
-    left: calc(50% - 300px);
+    width: 1200px;
+    top: 300px;
     display: flex;
   }
   
   .card {
     display: flex;
     height: 500px;
-    width: 700px;
-    background-color: #17141d;
+    width: 900px;
+    background-color: #4d3b3b;
     border-radius: 10px;
-    box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem 0 3rem rgb(0, 0, 0);
   /*   margin-left: -50px; */
     transition: 0.4s ease-out;
     position: relative;
@@ -131,3 +129,120 @@
   }
 
   /* card styling ends */
+
+
+
+  /* Inner card styling starts */
+#desc-tech{
+  opacity: 0;
+}
+.details:hover #desc-tech{
+    visibility:visible;
+}
+
+.details{
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 150px;
+}
+
+.details hr{
+  opacity: 0;
+  transform: scale(0);
+  transition: all 1.5s;
+}
+.card:hover hr{
+  transform: scale(100%);
+  opacity: 1;
+}
+
+/* Inner Card styling ends */
+
+/* Blinker Effect
+.blinker-container{
+  text-align: center;
+  align-items: center;
+  font-size: 70px;
+}
+.blink:nth-child(1) {
+  animation: blinker 200ms infinite;
+  color:wheat;
+}
+.blink:nth-child(2) {
+  animation: blinker 200ms infinite;
+  color:wheat;
+}
+.blink:nth-child(3) {
+  animation: blinker 700ms infinite;
+  color:wheat;
+}.blink:nth-child(4) {
+  animation: blinker 1s infinite;
+  color:wheat;
+}
+.blink:nth-child(5) {
+  animation: blinker 150ms infinite;
+  color:wheat;
+}
+.blink:nth-child(6) {
+  animation: blinker 1.04s infinite;
+  color:wheat;
+}.blink:nth-child(7) {
+  animation: blinker 200ms infinite;
+  color:wheat;
+}
+.blink:nth-child(8) {
+  animation: blinker 0.1s infinite;
+  color:wheat;
+}
+.blink:nth-child(9) {
+  animation: blinker 50ms infinite;
+  color:wheat;
+}
+.blink:nth-child(10) {
+  animation: blinker 800ms infinite;
+  color:wheat;
+}
+@keyframes blinker {
+  from { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  to { opacity: 1.0; }
+} */
+
+/* Blinker effer ends */
+
+/* Details animator starts*/
+.details ul{
+  list-style-type:georgian;
+  position: relative;
+}
+.details ul li:nth-child(1){
+  position: absolute;
+}
+.details ul li:nth-child(1):hover ~ li:nth-child(2){
+  top:120px;
+}
+.details ul li:nth-child(2){
+  top:40px;
+  position: absolute;
+  transition: all 1s;
+}
+.details ul li:nth-child(2) p{
+  opacity: 0;
+  transition: all 1s;
+}
+.details ul li:nth-child(1) p{
+  opacity: 0;
+  transition: all 1s;
+}
+.details ul li:hover p{
+  opacity: 1;
+}
+/* Details animator ends */
+.logo-container{
+    display: flex;
+    min-height: 24vh;
+    flex-direction: column-reverse;
+    align-items: center;
+}
