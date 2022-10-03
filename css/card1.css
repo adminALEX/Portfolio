@@ -164,14 +164,52 @@ position: relative;
 .fa-10x{
     font-size: 12em !important;
 }
+
 /* Links Styling starts */
 .links{
     position: absolute;
     min-height: 100vh;
     min-width: 150vh;
-    filter:brightness(0.5);
+    filter:contrast(40%);
 }
+.links>i:hover{
+    transition: all .3s;
+    scale: 120% !important;
+    color:#e7c9c9 !important;
+    filter:brightness(2) drop-shadow(2px rgb(65, 15, 15)) !important;
+}
+.links i:nth-child(2):hover{
+    transform: rotate(5deg);
 
+}
+.links i:nth-child(3):hover{
+    transform: rotate(5deg);
+
+}
+.links i:nth-child(4):hover{
+    transform: rotate(23deg);
+
+
+}
+.links i:nth-child(5):hover{
+    transform: rotate(30deg);
+
+
+}
+.links i:nth-child(6):hover{
+    transform: rotate(75deg);
+
+
+}
+.links i:nth-child(7):hover{
+    transform: rotate(-30deg);
+    
+
+}
+.links i:nth-child(8):hover{
+    transform: rotate(30deg);
+
+}
 .links i:nth-child(2){
     position: relative;
     left: 200px;
