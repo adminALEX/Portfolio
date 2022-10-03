@@ -170,13 +170,18 @@ position: relative;
     position: absolute;
     min-height: 100vh;
     min-width: 150vh;
-    filter:contrast(40%);
+
 }
+
+.links>i{
+    filter:brightness(0.3);
+}
+
 .links>i:hover{
     transition: all .3s;
     scale: 120% !important;
     color:#e7c9c9 !important;
-    filter:brightness(2) drop-shadow(2px rgb(65, 15, 15)) !important;
+    filter:brightness(1) drop-shadow(4px 2px 2px rgb(65, 15, 15)) !important;
 }
 .links i:nth-child(2):hover{
     transform: rotate(5deg);
@@ -197,7 +202,7 @@ position: relative;
 
 }
 .links i:nth-child(6):hover{
-    transform: rotate(75deg);
+    transform: rotate(35deg);
 
 
 }
@@ -241,7 +246,7 @@ position: relative;
     top:150px;
     left: -80px;
     float: left;
-    transform: rotate(90deg);
+    transform: rotate(65deg);
 
 }
 .links i:nth-child(7){
