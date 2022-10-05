@@ -10,6 +10,54 @@ body{
     font-family: 'Signika', sans-serif;
 }
 
+.float:hover p{
+  color:#000;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background: rgb(252,252,255);
+  background: linear-gradient(90deg, rgb(202, 197, 187) 0%, white 46%, rgba(243, 213, 225, 0.295));
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  z-index: 7;
+  float: none;
+  transition: all 1s;
+}
+
+.float .text{
+  
+  transition: all .3s;
+  position: absolute;
+  opacity: 0;
+  left:30%;
+  top: 28%;
+}
+.float:hover img{
+  transform: translateX(-70px);
+}
+.float:hover .text{
+  transition-delay: .6s;
+  opacity: 1;
+}
+.float:hover{
+  width: 200px;
+}
+
+.float img{
+  transition: all 1s;
+  position: relative;
+  top:13px; 
+  left:2px;
+  height: 30px;
+  width: auto;
+}
+
 /* Background image styling starts*/
 
 #bg-img{
