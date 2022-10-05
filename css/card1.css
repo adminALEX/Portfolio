@@ -175,6 +175,7 @@ position: relative;
 
 .links>i{
     filter:brightness(0.3);
+    position: absolute;
 }
 
 .links>i:hover{
@@ -213,8 +214,11 @@ position: relative;
 }
 .links i:nth-child(8):hover{
     transform: rotate(30deg);
-
 }
+.links i:nth-child(9):hover{
+    transform: rotate(3deg);
+}
+
 .links i:nth-child(2){
     position: relative;
     left: 200px;
@@ -251,8 +255,8 @@ position: relative;
 }
 .links i:nth-child(7){
     position: relative;
-    top:350px;
-    left: 140px;
+    top:300px;
+    left: 180px;
     transform: rotate(-45deg);
 
 }
@@ -262,6 +266,39 @@ position: relative;
     left: 220px;
     transform: rotate(45deg);
 
+}
+.links i:nth-child(9){
+    position: relative;
+    top:550px;
+    left:-900px;
+    transform: rotate(12deg);
+
+}
+.img-container{
+        position: relative;
+        left:900px;
+        top:-300px;
+        width: 23vh;
+        height: 23vh;
+        
+}
+.img-container img{
+        filter: brightness(.3);
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transform: rotate(12deg);
+        transition: all .3s;
+        /* Prevent the image from stretching. So it crops the image to prevent from awkward stretching */
+}
+.img-container img:hover{
+    filter: brightness(0.8);
+    width: 100%;
+    scale:120%;
+    height: auto;
+    object-fit: cover;
+    transform: rotate(3deg);
+    /* Prevent the image from stretching. So it crops the image to prevent from awkward stretching */
 }
 /* .links{
     position: relative;
