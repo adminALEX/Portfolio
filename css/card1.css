@@ -1,6 +1,7 @@
 
 .center
 {
+    overflow: hidden;
 position: relative;
   height:100vh;
   width:100%;
@@ -162,14 +163,14 @@ position: relative;
 
 /* Font-awesome Styling */
 .fa-10x{
-    font-size: 12em !important;
+    font-size: 8em !important;
 }
 
 /* Links Styling starts */
 .links{
     position: absolute;
-    min-height: 100vh;
-    min-width: 150vh;
+    height: 100vh;
+    width: 150vh;
 
 }
 
@@ -219,67 +220,97 @@ position: relative;
     transform: rotate(3deg);
 }
 
+.links i:nth-child(10):hover{
+transform: rotate(14deg);
+}
+.links i:nth-child(11):hover{
+    transform: rotate(5deg);
+
+}
+.links i:nth-child(12):hover{
+    transform: rotate(18deg);
+
+}
+
 .links i:nth-child(2){
-    position: relative;
-    left: 200px;
-    top:350px;
+    left: 2%;
+    top:3%;
     transform: rotate(20deg);
 }
 .links i:nth-child(3){
-    position: relative;
-    left: -500px;
-    top:500px;
+    left: 2%;
+    top:30%;
     transform: rotate(-10deg);
 }
 .links i:nth-child(4){
-    position: relative;
-    float: right;
-    top:450px;
+    left:13%;
+    top:43%;
     transform: rotate(8deg);
 
 }
 .links i:nth-child(5){
-    position: relative;
-    top:10px;
-    left: -300px;
+    top:5%;
+    left: 70%;
     transform: rotate(40deg);
 
 }
 .links i:nth-child(6){
-    position: relative;
-    top:150px;
-    left: -80px;
+    top:60%;
+    left: 20%;
     float: left;
     transform: rotate(65deg);
 
 }
 .links i:nth-child(7){
-    position: relative;
-    top:300px;
-    left: 180px;
+    top:58%;
+    left: 0%;
     transform: rotate(-45deg);
 
 }
 .links i:nth-child(8){
-    position: relative;
-    top:0px;
-    left: 220px;
+    top:25%;
+    left: 76%;
     transform: rotate(45deg);
 
 }
 .links i:nth-child(9){
-    position: relative;
-    top:550px;
-    left:-900px;
+    top:50%;
+    left:70%;
     transform: rotate(12deg);
 
 }
+.links i:nth-child(10){
+    top:55%;
+    left:89%;
+    transform: rotate(-5deg);
+
+}
+.links i:nth-child(11){
+    top:0%;
+    left:19%;
+    transform: rotate(20deg);
+
+}
+.links i:nth-child(12){
+    top:24%;
+    left:23%;
+    transform: rotate(12deg);
+
+}
+.links i:nth-child(13){
+    top:35%;
+    left:90%;
+    transform: rotate(-9deg);
+
+}
 .img-container{
-        position: relative;
-        left:900px;
-        top:-300px;
+    overflow: hidden;
+    position: absolute;
+        left:87%;
+        top:3%;
         width: 23vh;
         height: 23vh;
+        padding: 20px;
         
 }
 .img-container img{
@@ -289,7 +320,6 @@ position: relative;
         object-fit: cover;
         transform: rotate(12deg);
         transition: all .3s;
-        /* Prevent the image from stretching. So it crops the image to prevent from awkward stretching */
 }
 .img-container img:hover{
     filter: brightness(0.8);
@@ -337,7 +367,20 @@ position: relative;
 }
 @media (max-width:1200px) {
     .content{
-        margin-top:20%;
+        margin-top: 5%;
+        font-size: medium;
+
+    }
+    .property-description{
+        bottom:-4em;
+    }
+    .fa-10x{
+        font-size: 6em !important;
+    }
+    .img-container{
+        max-height:18vh;
+        max-width:18vh;
+        padding: 15px;
     }
 }
 
@@ -345,14 +388,36 @@ position: relative;
     .ul-class{
         letter-spacing: 2px;
     }
-    .content{
-        margin-top:30%;
+    .links{
+        height: 75vh !important;
+    }
+    .center{
+        margin-top: 20px;
+        height: 80vh;
+    }
+    .fa-10x{
+        font-size: 4.2em !important;
+    }
+    .img-container{
+        left: 60%;
+        max-height:13vh;
+        max-width:13vh;
+        padding: 10px;
     }
 }
 @media (max-width:600px) {
 
     .content{
-        margin-top:40%;
+        margin-top:10%;
+        font-size: small;
+    }
+    .fa-10x{
+        font-size: 3.5em !important;
+    }
+    .img-container{
+        max-height:6.6vh;
+        max-width:6.6vh;
+        padding: 7px;
     }
 }
 @media (max-width:400px) {
@@ -360,7 +425,8 @@ position: relative;
         letter-spacing: 2px;
     }
     .content{
-        margin-top:50%;
+        margin-top:15%;
+        font-size: smaller;
     }
 }
 @media(max-width:100px){

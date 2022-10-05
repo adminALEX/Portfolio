@@ -301,8 +301,6 @@
     }
 }
 
-/* Move the background and make it larger. */
-/* Animation shown when hovering over the text. */
 @keyframes rainbow-text-simple-animation {
     0% {
         background-size: 100%;
@@ -325,3 +323,7 @@ header {
 }
 
 
+
+@media (max-width:1200px) {
+  
+}
