@@ -364,6 +364,17 @@ transform: rotate(14deg);
     .content{
         margin-top: 14%;
     }
+    .property-description{
+        bottom:-4em;
+    }
+    .fa-10x{
+        font-size: 6em !important;
+    }
+    .img-container{
+        max-height:18vh;
+        max-width:18vh;
+        padding: 15px;
+    }
 }
 @media (max-width:1200px) {
     .content{
