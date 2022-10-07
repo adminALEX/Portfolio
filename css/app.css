@@ -13,6 +13,11 @@ body{
 .float:hover p{
   color:#000;
 }
+
+title{
+    font-weight: bold !important;
+}
+
 .float{
 	position:fixed;
 	width:60px;
@@ -20,7 +25,8 @@ body{
 	bottom:40px;
 	right:40px;
 	background: rgb(252,252,255);
-  background: linear-gradient(90deg, rgb(202, 197, 187) 0%, white 46%, rgba(243, 213, 225, 0.295));
+  filter:brightness(1.5);
+  background: linear-gradient(90deg, rgb(202, 197, 187) 0%, rgb(216, 191, 191) 46%, rgb(255, 247, 247));
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;

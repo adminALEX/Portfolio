@@ -10,10 +10,11 @@
     <!-- CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Linking stylesheets -->
     <link rel = "stylesheet" href="./css/app.css">
     <link rel = "stylesheet" href="./css/section-animate.css">
@@ -21,6 +22,7 @@
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/certificates.css">
     <link rel="stylesheet" href="./css/interns.scss">
+    <link rel="stylesheet" href="./css/swiper.css">
     
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,9 +32,43 @@
     <script defer src="./scripts/section-animate.js"></script>
     <script src="./scripts/interns.js"></script>
 
-    <!-- Styling for interns -->
+    <!-- Swiperjs Styling for interns -->
     <style>
-    
+    .swiper {
+        width: 95%;
+        height: 100%;
+        min-height: 65vh;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        border-radius:20px;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     </style>
     <!-- Styling for interns ends -->
 
@@ -42,7 +78,7 @@
 
 <!-- Body -->
 <body id="profile" class="darken">
-  <a href="#" class="float">
+  <a href="./assets/ALEX-CV.pdf" class="float">
     <p class="text">DOWNLOAD CV</p>
     <img src="./assets/svg-format.png" class="my-float" alt="resume">
     </a>
@@ -341,15 +377,60 @@
     <hr style="color:white;"><br><br>
     <section id="contact"class="hidden">
         <h1>Interships and Certifications</h1>
-        <!-- Image Slider effect -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="s-head-container">
+              <h3 class="s-head">Parttime intern at Internshala</h3>
+              </div>
+              <div class="s-img-container">
+                <img src="./assets/intern_logo.png" alt="intershala-logo" class="s-img">
+              </div>
+              <div class="s-body-container">
+                <div class="s-body">
+                  <h6 class="desc-1">
+                    Mar 2022 - May 2022 · 2 months <br>
+                    Mode : Online
+                  </h6>
+                  <h6>Skills : <i>Java</i></h6>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
         
     </section>
 </div>
 
-<!-- Scripting  starts-->
+<!-- Swiperjs Scripting  starts-->
 <script>
-  
-  </script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 <!-- Scripting ends -->
 
 </body>
