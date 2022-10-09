@@ -150,6 +150,7 @@
   }
   .desc-1{
     color: #fff;
+    -webkit-text-fill-color: #fff;
     text-align: left;
     padding-left:4em;
     line-height: 2em;
