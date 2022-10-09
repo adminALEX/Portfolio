@@ -21,6 +21,7 @@ input[type=text], select, textarea {
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
   }
   
   input[type=submit]:hover {
@@ -91,12 +92,17 @@ input[type=text], select, textarea {
 
   .bmc-container{
     position: relative;
-    top:-50px;
+    top:-46px;
     left:100px;
+  }
+
+  .bmc:hover{
+    color:black;
   }
   
   .btn-primary{
-    height: 50px !important;
+    height: 46px !important;
+    border-radius: 10px;
   }
   @media screen and (max-width: 600px) {
     .bmc-container{
