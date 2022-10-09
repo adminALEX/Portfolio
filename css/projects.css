@@ -259,9 +259,9 @@
         #E16541 16.666%, 
         #E16541 33.333%, 
         #a79181 33.333%, 
-        #F18F43 50%, 
-        #8B9862 50%,
-        rgba(255,186,0,1),
+        #9c8a7b 50%, 
+        #3a4123 50%,
+        rgb(90, 73, 25),
         #476098 66.666%, 
         #476098 83.333%,
         #cf2c0f 83.333%);
@@ -325,5 +325,19 @@ header {
 
 
 @media (max-width:1200px) {
-  
+  .last-before-bar{
+    margin-top: 30px;
+  }
+}
+
+@media (max-width:1400px){
+  .last-bar{
+    margin-top: 35px;
+  }
+ 
+}
+@media (max-width:170px){
+  .logo-container{
+    min-height: 10vh;
+  }
 }

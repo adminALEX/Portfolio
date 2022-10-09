@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/certificates.css">
     <link rel="stylesheet" href="./css/interns.scss">
     <link rel="stylesheet" href="./css/swiper.css">
-    
+    <link rel="stylesheet" href="./css/footer.css">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
@@ -42,10 +42,21 @@
         margin-right: 10px;
       }
 
+    .swiper-wrapper {
+          max-height: 60vh;
+        }
+      @media (max-width:1700px){
+        .swiper-wrapper {
+          max-height: 50vh;
+          max-width: fit-content;
+        }
+      }
+      
       .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: #fff;
+        background: #00000075;
+        
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -87,8 +98,8 @@
     <ul class="ul-class">
         <li class="li-class"><a  href="#profile">Profile</a></li>
         <li class="li-class"><a  href="#projects-ph">Projects</a></li>
-        <li class="li-class"><a  href="#projects">Achievements</a></li>
-        <li class="li-class"><a  href="#contact">Contact</a></li>
+        <li class="li-class"><a  href="#achievements-ph">Achievements</a></li>
+        <li class="li-class"><a  href="#contact-ph">Contact</a></li>
     </ul>
     </div>
     
@@ -131,8 +142,10 @@
             </p>
             </ul>
         </div>
+        <span  id="projects-ph" class = "bottom"> </span>
       </div>
-      <div id="projects-ph" style="position: fixed; top:100vh;"></div>
+
+      <hr style="color:white;"><br><br>
     <section id = "skills" class="hidden">
       <h1>Projects</h1>
       <div class="container">
@@ -189,7 +202,7 @@
           <header>
             <h2 class="title gradient-text">JavaFX Application</h2>
           </header>
-          <div class="bar">
+          <div class="bar last-before-bar">
             <div class="emptybar"></div>
             <div class="filledbar"></div>
           </div>
@@ -213,7 +226,7 @@
           <header>
             <h2 class="title gradient-text" >Core Java Application</h2>
           </header>
-          <div class="bar">
+          <div class="bar last-bar">
             <div class="emptybar"></div>
             <div class="filledbar"></div>
           </div>
@@ -234,183 +247,182 @@
             </div>
         </div>
       </div>
-    </section>
-    <section id="projects" class="hidden">
-      <div class="contain-cards">
-        <div window>
-          <div class="main">
-            <h1>Fruits</h1>
-            <details>
-              <summary>Apple</summary>
-              <div class="detail-body">
-                <p>
-                  Lorem Ipsum is simply dummy text of the 
-                  printing and typesetting industry. Lorem 
-                  Ipsum has been the industry's standard dummy 
-                  text ever since the 1500s, when an unknown 
-                  printer took a galley of type and scrambled 
-                  it to make a type specimen book. It has survived 
-                  not only five centuries, but also the leap into 
-                  electronic typesetting, remaining essentially 
-                  unchanged. 
-               </p>
-              </div>
-            </details>
-            <details>
-              <summary>Banana</summary>
-              <div class="detail-body">
-                <p>
-                  The standard chunk of Lorem Ipsum used since 
-                  the 1500s is reproduced below for those interested.
-                  Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum 
-                  et Malorum" by Cicero are also reproduced in their 
-                  exact original form, accompanied by English versions 
-                  from the 1914 translation by H. Rackham. The first line 
-                  of Lorem Ipsum, "Lorem ipsum dolor sit amet..", 
-                  comes from a line in section 1.10.32.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>Pear</summary>
-              <div class="detail-body">
-                <p>
-                  It is a long established fact that a reader will be 
-                  distracted by the readable content of a page when 
-                  looking at its layout. The point of using Lorem 
-                  Ipsum is that it has a more-or-less normal 
-                  distribution of letters, as opposed to using 
-                  Content here, content here', making it look like 
-                  readable English. Many desktop publishing packages 
-                  and web page editors now use Lorem Ipsum as their  
-                  default model text, and a search for 'lorem ipsum' 
-                  will uncover many web sites still in their infancy.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>Orange</summary>
-              <div class="detail-body">
-                <p>
-                  Contrary to popular belief, Lorem Ipsum is not 
-                  simply random text. It has roots in a piece of 
-                  classical Latin literature from 45 BC, making 
-                  it over 2000 years old. Richard McClintock, 
-                  a Latin professor at Hampden-Sydney College 
-                  in Virginia, looked up one of the more obscure 
-                  Latin words, consectetur.
-                </p>
-              </div>
-            </details>
-          </div>
-        </div>
-        <div window>
-          <div class="main">
-            <h1>Fruits</h1>
-            <details>
-              <summary>Apple</summary>
-              <div class="detail-body">
-                <p>
-                  Lorem Ipsum is simply dummy text of the 
-                  printing and typesetting industry. Lorem 
-                  Ipsum has been the industry's standard dummy 
-                  text ever since the 1500s, when an unknown 
-                  printer took a galley of type and scrambled 
-                  it to make a type specimen book. It has survived 
-                  not only five centuries, but also the leap into 
-                  electronic typesetting, remaining essentially 
-                  unchanged. 
-               </p>
-              </div>
-            </details>
-            <details>
-              <summary>Banana</summary>
-              <div class="detail-body">
-                <p>
-                  The standard chunk of Lorem Ipsum used since 
-                  the 1500s is reproduced below for those interested.
-                  Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum 
-                  et Malorum" by Cicero are also reproduced in their 
-                  exact original form, accompanied by English versions 
-                  from the 1914 translation by H. Rackham. The first line 
-                  of Lorem Ipsum, "Lorem ipsum dolor sit amet..", 
-                  comes from a line in section 1.10.32.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>Pear</summary>
-              <div class="detail-body">
-                <p>
-                  It is a long established fact that a reader will be 
-                  distracted by the readable content of a page when 
-                  looking at its layout. The point of using Lorem 
-                  Ipsum is that it has a more-or-less normal 
-                  distribution of letters, as opposed to using 
-                  Content here, content here', making it look like 
-                  readable English. Many desktop publishing packages 
-                  and web page editors now use Lorem Ipsum as their  
-                  default model text, and a search for 'lorem ipsum' 
-                  will uncover many web sites still in their infancy.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>Orange</summary>
-              <div class="detail-body">
-                <p>
-                  Contrary to popular belief, Lorem Ipsum is not 
-                  simply random text. It has roots in a piece of 
-                  classical Latin literature from 45 BC, making 
-                  it over 2000 years old. Richard McClintock, 
-                  a Latin professor at Hampden-Sydney College 
-                  in Virginia, looked up one of the more obscure 
-                  Latin words, consectetur.
-                </p>
-              </div>
-            </details>
-          </div>
-        </div>
-      </div>
-      
-    </section>
+      <span  id="achievements-ph" class = "bottom"> </span>
+    </section><br class="br"><br class="br">
     <hr style="color:white;"><br><br>
     <section id="contact"class="hidden">
-        <h1>Interships and Certifications</h1>
+        <h1>Achievements</h1>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="s-head-container">
-              <h3 class="s-head">Parttime intern at Internshala</h3>
+              <h3 class="s-head gradient-text">Certificate of Training on Core Java</h3>
               </div>
               <div class="s-img-container">
-                <img src="./assets/intern_logo.png" alt="intershala-logo" class="s-img">
+                <div class="img-cont">
+                <img src="./assets/intern_logo.png" class="img" alt="intershala-logo" ></div>
+              </div>
+              <div class="s-body-container">
+                <div class="s-body">
+                  
+                  <h6 class="desc-1">
+                    Duration : 
+                    May 2022 - July 2022 <br>
+                    Credential ID : 9E81A7F3-0A64-D665-419D-7082761D3B3E
+                  </h6><br>
+                  <div class="row row-flex">
+                    <div class="col-3"><p style="float: right;">Skills:</p></div>
+                    <div class="col-9" ><p class="make-it-center">Java - Intermediate</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="s-head-container">
+              <h3 class="s-head gradient-text">Java Basic on Hackerrank</h3>
+              </div>
+              <div class="s-img-container">
+                <div class="img-cont">
+                <img src="./assets/hr-svg.svg" class="img-hr" alt="HR-logo" ></div>
               </div>
               <div class="s-body-container">
                 <div class="s-body">
                   <h6 class="desc-1">
-                    Mar 2022 - May 2022 · 2 months <br>
-                    Mode : Online
-                  </h6>
-                  <h6>Skills : <i>Java</i></h6>
+                    Issued on: 
+                    May 2022 <br>
+                    Credential ID : ECF709147481
+                  </h6><br>
+                  <div class="row row-flex">
+                    <div class="col-3"><p style="float: right;">Skills:</p></div>
+                    <div class="col-9" ><p class="make-it-center">Java - Basic</p></div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+          
+            <div class="swiper-slide">
+              <div class="s-head-container">
+              <h3 class="s-head gradient-text">Internship Training Certificate on Web Devolopment</h3>
+              </div>
+              <div class="s-img-container">
+                <div class="img-cont">
+                <img src="./assets/codebind.png" class = "img" alt="code-bind-logo">
+                </div>
+              </div>
+              <div class="s-body-container">
+                <div class="s-body">
+                  
+                  <h6 class="desc-1">
+                    Issued on : Feb 2022 <br>
+                    Credential ID : CBTINC222005220204<br>
+                    Mode : In-Person<br>
+                    Location : Chennai, Tamil Nadu.
+                  </h6><br>
+                  <div class="row row-flex">
+                    <div class="col-3"><p style="float: right;">Skills:</p></div>
+                    <div class="col-9" ><p class="make-it-center">HTML</p><p class="make-it-center">Javascript</p><p class="make-it-center">CSS</p><p class="make-it-center">PHP</p></div>
+                  </div>
+                </div>
+              </div></div>
+            <div class="swiper-slide"><div class="s-head-container">
+              <h3 class="s-head gradient-text">Hackerrank C Beginner Certificate</h3>
+              </div>
+              <div class="s-img-container">
+                <div class="img-cont">
+                <img src="./assets/hr-svg.svg" class="img-hr" alt="hr-logo">
+                </div>
+              </div>
+              <div class="s-body-container">
+                <div class="s-body">
+                  
+                  <h6 class="desc-1">
+                    Issued on : 
+                    September 2020 <br>
+                    Credential ID : 4DD80D7072BD
+                  </h6><br>
+                  <div class="row row-flex">
+                    <div class="col-3"><p style="float: right;">Skills:</p></div>
+                    <div class="col-9" ><p class="make-it-center">C - Basic</p></div>
+                  </div>
+                </div>
+              </div></div>
+            <div class="swiper-slide"><div class="s-head-container">
+              <h3 class="s-head gradient-text">Hackerrank C Intermediate Certificate</h3>
+              </div>
+              <div class="s-img-container">
+                <div class="img-cont">
+                <img src="./assets/hr-svg.svg" alt="hr-logo" class="img-hr">
+                </div>
+              </div>
+              <div class="s-body-container">
+                <div class="s-body">
+                  
+                  <h6 class="desc-1">
+                    Issued on : 
+                    September 2020 <br>
+                    Credential ID : 39B65013F18A
+                  </h6><br>
+                  <div class="row row-flex">
+                    <div class="col-3"><p style="float: right;">Skills:</p></div>
+                    <div class="col-9" ><p class="make-it-center">C - Intermediate</p></div>
+                  </div>
+                </div>
+              </div></div>
+            <div class="swiper-slide"><div class="s-head-container">
+              <h3 class="s-head gradient-text ">Hackerrank Basic Python Certificate</h3>
+              </div>
+              <div class="s-img-container">
+                <div class="img-cont">
+                <img src="./assets/hr-svg.svg" alt="hr-logo" class="img-hr">
+                </div>
+              </div>
+              <div class="s-body-container">
+                <div class="s-body">
+                  
+                  <h6 class="desc-1">
+                    Issued on : 
+                    Jul 2020<br>
+                    Credential ID : 684CDE845C63
+                  </h6><br>
+                  <div class="row row-flex">
+                    <div class="col-3"><p style="float: right;">Skills:</p></div>
+                    <div class="col-9" ><p class="make-it-center">Python</p></div>
+                  </div>
+                </div>
+              </div></div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
-        
+        <span  id="contact-ph" class = "bottom"> </span>
     </section>
+    <hr style="color: white;">
+    <div class="footer-container">
+      <div class="footer footer-bg">
+        <div class="row">
+          <div class="column footer-img">
+            <img src="./assets/ele-final.svg" class="ele-img">
+          </div>
+          <div class="column">
+            <form name="emailform" action="https://formspree.io/f/mzbwvzbo" method='POST'>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Your First name.." required>
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Your last name.." required>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email.." required>
+              <label for="subject">Subject</label>
+              <textarea id="message" name="message" placeholder="Write something.." style="height:170px" required></textarea>
+              <input type="submit" value="Send">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>Crafted by <a href="https://github.com/adminALEX">Alex</a>&ensp;&copy;&nbsp;2022</p>
+      </div>
+    </div>
 </div>
 
 <!-- Swiperjs Scripting  starts-->

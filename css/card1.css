@@ -170,7 +170,7 @@ position: relative;
 .links{
     position: absolute;
     height: 100vh;
-    width: 150vh;
+    width: 145vh;
 
 }
 
@@ -304,8 +304,8 @@ transform: rotate(14deg);
 
 }
 .img-container{
-    overflow: hidden;
-    position: absolute;
+        overflow: hidden;
+        position: absolute;
         left:87%;
         top:3%;
         width: 23vh;
@@ -401,10 +401,12 @@ transform: rotate(14deg);
     }
     .links{
         height: 75vh !important;
+        width: 100%;
     }
     .center{
         margin-top: 20px;
         height: 80vh;
+        width: 100%;
     }
     .fa-10x{
         font-size: 4.2em !important;

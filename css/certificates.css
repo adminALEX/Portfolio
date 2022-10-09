@@ -139,3 +139,24 @@
     top: 1em;
     left: 1em;
   }
+
+  .row-flex{
+    width: 100%;
+  }
+  .make-it-center{
+    background-color: #9bdeff;
+    border-radius: 10px;
+    box-shadow:3px 2px 7px 1px rgba(0, 0, 0, 0.2);
+  }
+  .desc-1{
+    color: #fff;
+    text-align: left;
+    padding-left:4em;
+    line-height: 2em;
+  }
+
+  @media (max-width:1500px) {
+    .center{
+      height: 80vh;
+    }
+  }

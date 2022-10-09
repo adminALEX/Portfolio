@@ -8,6 +8,7 @@
 
 body{
     font-family: 'Signika', sans-serif;
+    overflow-x: hidden;
 }
 
 .float:hover p{
@@ -165,6 +166,7 @@ div .navbar{
         align-content: center;
       }
     }
+    
     /* @media (max-width:600px){
       .ul-class{
         font-size: medium;
@@ -182,3 +184,8 @@ div .navbar{
       }
     } */
 /* Navbar styling ends */
+
+.bottom{
+  position: absolute;
+  bottom: 65px;
+}
