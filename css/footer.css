@@ -87,3 +87,24 @@ input[type=text], select, textarea {
     text-decoration: none;
     color:rgb(196, 176, 147);
   }
+
+
+  .bmc-container{
+    position: relative;
+    top:-50px;
+    left:100px;
+  }
+  
+  .btn-primary{
+    height: 50px !important;
+  }
+  @media screen and (max-width: 600px) {
+    .bmc-container{
+      width: 100%;
+      margin-top: 70px;
+      left:0px;
+    }
+    .btn-primary{
+      width: 100% !important;
+    }
+  }
