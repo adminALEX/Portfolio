@@ -127,7 +127,7 @@ input[name=fname]{
 
 input[type=email]{
   caret-color:rgb(63, 12, 20);
-  color: rgb(218, 197, 197);
+  color: rgb(59, 59, 59);
 }
 textarea{
   caret-color:rgb(148, 58, 6);
