@@ -133,3 +133,7 @@ textarea{
   caret-color:rgb(148, 58, 6);
   color: rgb(145, 216, 30);
 }
+
+.row {
+  --bs-gutter-x:-8.5rem;
+}
