@@ -376,6 +376,19 @@ transform: rotate(14deg);
         padding: 15px;
     }
 }
+@media (max-width:1200px),(max-height:850px) {
+    .content{
+        margin-top: 9%;
+    }
+    .fa-10x{
+        font-size: 6em !important;
+    }
+    /*.img-container{
+        max-height:18vh;
+        max-width:18vh;
+        padding: 15px;
+    } */
+}
 @media (max-width:1200px) {
     .content{
         margin-top: 5%;
@@ -447,3 +460,4 @@ transform: rotate(14deg);
         letter-spacing: 1px;
     }
 }
+
