@@ -114,3 +114,22 @@ input[type=text], select, textarea {
       width: 100% !important;
     }
   }
+input[name=fname]{
+  caret-color:pink;
+  shape-rendering:optimizeSpeed;
+  color: rgb(109, 104, 104);
+}
+
+input[name=fname]{
+  caret-color:rgb(21, 15, 94);
+  color: rgb(39, 17, 17);
+}
+
+input[type=email]{
+  caret-color:rgb(63, 12, 20);
+  color: rgb(218, 197, 197);
+}
+textarea{
+  caret-color:rgb(148, 58, 6);
+  color: rgb(145, 216, 30);
+}
