@@ -47,6 +47,7 @@
     margin-right: auto;
 }
 
+
 @media (max-width:1099px) {
     .swiper-slide{
         max-height: fit-content;
@@ -76,4 +77,19 @@
         font-size: smaller;
     }
     
+}
+
+@media (max-width:1000px) {
+    .row-flex{
+        font-size: small !important;
+    }
+    .desc-1{
+        padding-left: 1em;
+    }
+}
+
+@media (max-width:900px) {
+    .container{
+        width: 100%;
+    }
 }

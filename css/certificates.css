@@ -163,6 +163,32 @@
 
   @media (max-width:1400px){
     .s-head{
+      font-size: large !important;
+    }
+    .desc-1{
       font-size: small !important;
+    }
+  }
+
+  @media (max-height:700px) {
+    section{
+      min-height: 165vh;
+    }
+    
+  }
+  @media (max-width:1000px){
+    .s-head{
+      font-size: medium !important;
+    }
+    .desc-1{
+      font-size: smaller !important;
+    }
+  }
+  @media (max-width:600px){
+    .s-head{
+      font-size: small !important;
+    }
+    .desc-1{
+      font-size: x-small !important;
     }
   }
