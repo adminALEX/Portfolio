@@ -464,9 +464,7 @@ header {
   display: flex;
   position: absolute !important;
 }
-.swiper-slide{
-  display: none;
-}
+
 .container>.card:hover {
   z-index: calc(100*(var(--n))) !important;
   transition: all 1s;
