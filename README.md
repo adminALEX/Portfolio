@@ -1,7 +1,7 @@
 # Digital-Resume
   I'm very delightful ❤️ to share my Website with you guys. Thanks for your time 🕦 in advance ! 
 ## Introduction
-Its' my first personal portfolio site. My site won't qualify as a website, It's Barely a webpage 😅. 
+Its' my first personal portfolio site. It is Barely a webpage 😅. 
 Anyways Major Languages used in my site are HTML, CSS, and a pinch 🧂 of Javascript.
 I added font and color 🎨 support for almost every web browsers used widely. You can not only clone this but also easily understand the code. Beacause of o fancy frontend languages are used. It'll run under a minimal requirements. I have'nt clearly commented and arranged the code yet *My Bad:(*
 
