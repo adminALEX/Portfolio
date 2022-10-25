@@ -16,6 +16,7 @@
 }
 .img-cont img{
     max-width: 100%;
+    filter: brightness(1.4) saturate(2);
     max-height: 100%;
     display: block; /* remove extra space below image */
 }
