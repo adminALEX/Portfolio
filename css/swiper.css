@@ -18,7 +18,7 @@
     
     .img-cont img {
     max-width:100%;
-    filter:brightness(1.4) saturate(2);
+    filter:brightness(1);
     max-height:100%;
     display:block
     }

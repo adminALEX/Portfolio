@@ -11,7 +11,7 @@
     .property-card {
     position:relative;
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../assets/Colored\ Shapes.svg") no-repeat cover center;
-    filter:brightness(1.2);
+    filter:brightness(1);
     height:75vh;
     width:50vh;
     display:-webkit-box;
@@ -28,8 +28,7 @@
     transition:all .4s cubic-bezier(0.1,0.1,0.1,1);
     border-radius:16px;
     overflow:hidden;
-    -webkit-box-shadow:15px 15px 27px #e1e1e3,-15px -15px 27px #fff;
-    box-shadow:15px 15px 27px #5f1a1a,-15px -15px 27px #753939
+    box-shadow: rgb(247 176 176 / 31%) 15px 15px 27px, rgb(91 91 91) -15px -15px 27px;
     }
     
     .property-card:hover {
@@ -40,7 +39,6 @@
     
     .property-image {
     height:50vh;
-    filter:saturate(1.8);
     width:100%;
     padding:1em 2em;
     position:Absolute;
@@ -209,8 +207,8 @@
     }
     
     .links i:nth-child(2) {
-    left:2%;
-    top:3%;
+    left:8%;
+    top:15%;
     transform:rotate(20deg)
     }
     

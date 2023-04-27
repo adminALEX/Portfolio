@@ -67,13 +67,7 @@ width:auto
 }
 
 #bg-img {
-background:url(../assets/Black-Animation-Background/Black-Animation-Background.svg) no-repeat center center scroll;
-backdrop-filter:blur(10px);
-filter:grayscale(50%);
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover;
+background:#202124;
 min-height:200vh
 }
 
@@ -163,4 +157,12 @@ align-content:center
 .bottom {
 position:absolute;
 bottom:65px
+}
+
+.h1{
+  display: flex;
+  justify-content: center;
+  color:white;
+  font-size: 50px;
+
 }
