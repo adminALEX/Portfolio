@@ -334,35 +334,6 @@ transform: rotate(14deg);
     transform: rotate(3deg);
     /* Prevent the image from stretching. So it crops the image to prevent from awkward stretching */
 }
-/* .links{
-    position: relative;
-
-}
-.links i{
-    position: absolute;
-}
-
-.links i:nth-child(1){
-    top: 100px;
-}
-
-.links i:nth-child(2){
-    top: 100px;
-}
-
-.links i:nth-child(3){
-    top: 100px;
-}
-
-.links i:nth-child(4){
-    top: 100px;
-}
-
-.links i:nth-child(5){
-    top: 100px;
-} */
-/* Links styling ends */
-
 /* Media Query */
 @media (max-width:1500px) {
     .content{

@@ -91,7 +91,6 @@ title{
 
 .ul-class{
   padding-left: 0 !important;
-  letter-spacing: 7px;
 	display: flex;
 	width: 100%;
 	height: 10vh;
@@ -100,12 +99,10 @@ title{
 	max-width: 1000px;
 	justify-content: space-between;
   list-style: none;
-	text-align: center;
 }
 .li-class {
 	padding: 1rem 2rem 1.15rem;
   text-transform: uppercase;
-  cursor: pointer;
 	min-width: 80px;
 	margin: auto;
 }
@@ -166,24 +163,6 @@ div .navbar{
         align-content: center;
       }
     }
-    
-    /* @media (max-width:600px){
-      .ul-class{
-        font-size: medium;
-      }
-      .li-class{
-        font-size: small;
-        max-width: fit-content;
-        
-      }
-      .li-class a{
-        align-items: flex-start;
-      }
-      .li-class:hover{
-        background-size: cover;
-      }
-    } */
-/* Navbar styling ends */
 
 .bottom{
   position: absolute;

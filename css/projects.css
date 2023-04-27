@@ -166,60 +166,6 @@
   opacity: 1;
 }
 
-/* Inner Card styling ends */
-
-/* Blinker Effect
-.blinker-container{
-  text-align: center;
-  align-items: center;
-  font-size: 70px;
-}
-.blink:nth-child(1) {
-  animation: blinker 200ms infinite;
-  color:wheat;
-}
-.blink:nth-child(2) {
-  animation: blinker 200ms infinite;
-  color:wheat;
-}
-.blink:nth-child(3) {
-  animation: blinker 700ms infinite;
-  color:wheat;
-}.blink:nth-child(4) {
-  animation: blinker 1s infinite;
-  color:wheat;
-}
-.blink:nth-child(5) {
-  animation: blinker 150ms infinite;
-  color:wheat;
-}
-.blink:nth-child(6) {
-  animation: blinker 1.04s infinite;
-  color:wheat;
-}.blink:nth-child(7) {
-  animation: blinker 200ms infinite;
-  color:wheat;
-}
-.blink:nth-child(8) {
-  animation: blinker 0.1s infinite;
-  color:wheat;
-}
-.blink:nth-child(9) {
-  animation: blinker 50ms infinite;
-  color:wheat;
-}
-.blink:nth-child(10) {
-  animation: blinker 800ms infinite;
-  color:wheat;
-}
-@keyframes blinker {
-  from { opacity: 1.0; }
-  50% { opacity: 0.5; }
-  to { opacity: 1.0; }
-} */
-
-/* Blinker effer ends */
-
 /* Details animator starts*/
 .details ul{
   list-style-type:georgian;
@@ -389,39 +335,6 @@ header {
   margin-top: calc(50px * var(--n));
   background-color: #1B1B1C;
 }
-/*
-
-.container .card:hover:nth-child(4){
-  z-index: 90;
-  margin-top: 0px !important;
-  background-color: #17141d;
-  margin-top: calc(nth-child());
-}
-.container .card:hover:nth-child(3){
-  z-index: 90;
-  margin-top: 0px !important;
-}
-.container .card:hover:nth-child(2){
-  z-index: 90;
-  margin-top: 0px !important;
-}
-.container .card:hover:nth-child(1){
-  z-index: 90;
-  margin-top: 0px !important;
-}
-.container .card:not(:hover):nth-child(4){
-  z-index: 0;
-}
-.container .card:not(:hover):nth-child(3){
-  margin-top: 30px;
-  z-index: 0;
-}
-.container .card:not(:hover):nth-child(2){
-  z-index: 0;
-}
-.container .card:not(:hover):nth-child(1){
-  z-index: 0;
-} */
 
 .card:hover {
   transform: none;
@@ -481,40 +394,6 @@ header {
   margin-top: calc(50px * var(--n));
   background-color: #1B1B1C;
 }
-/*
-
-.container .card:hover:nth-child(4){
-  z-index: 90;
-  margin-top: 0px !important;
-  background-color: #17141d;
-  margin-top: calc(nth-child());
-}
-.container .card:hover:nth-child(3){
-  z-index: 90;
-  margin-top: 0px !important;
-}
-.container .card:hover:nth-child(2){
-  z-index: 90;
-  margin-top: 0px !important;
-}
-.container .card:hover:nth-child(1){
-  z-index: 90;
-  margin-top: 0px !important;
-}
-.container .card:not(:hover):nth-child(4){
-  z-index: 0;
-}
-.container .card:not(:hover):nth-child(3){
-  margin-top: 30px;
-  z-index: 0;
-}
-.container .card:not(:hover):nth-child(2){
-  z-index: 0;
-}
-.container .card:not(:hover):nth-child(1){
-  z-index: 0;
-} */
-
 .card:hover {
   transform: none;
   transition: none;
