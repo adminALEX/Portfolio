@@ -1,139 +1,135 @@
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+input[type=text],select,textarea {
+  width:100%;
+  padding:12px;
+  border:1px solid #ccc;
+  margin-top:6px;
+  margin-bottom:16px;
+  resize:vertical
   }
-  input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+  
+  input[type=email],select,textarea {
+  width:100%;
+  padding:12px;
+  border:1px solid #ccc;
+  margin-top:6px;
+  margin-bottom:16px;
+  resize:vertical
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
+  background-color:#04AA6D;
+  color:#fff;
+  padding:12px 20px;
+  border:none;
+  cursor:pointer;
+  border-radius:10px
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+  background-color:#45a049
   }
   
-  /* Style the container/contact section */
   .container {
-    border-radius: 5px;
-    padding: 10px;
+  border-radius:5px;
+  padding:10px
   }
   
-  /* Create two columns that float next to eachother */
   .column {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
+  float:left;
+  width:50%;
+  margin-top:6px;
+  padding:20px
   }
   
-  /* Clear floats after the columns */
   .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content:"";
+  display:table;
+  clear:both
   }
   
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
+  .column,input[type=submit] {
+  width:100%;
+  margin-top:0
+  }
   }
   
-  .ele-img{
-    
-    width:60%;
-    filter:invert(1);
-
-  }
-
-  .footer-img{
-    align-items: center;
-    background: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-copy{
-    padding-top: 10px;
-    width: 100%;
-    position: fixed;
-    max-height: min-content;
-    text-align: center;
-  }
-
-  .footer-copy p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:whitesmoke;
-  }
-  .footer-copy a,a:hover{
-    text-decoration: none;
-    color:rgb(196, 176, 147);
-  }
-
-
-  .bmc-container{
-    position: relative;
-    top:-46px;
-    left:100px;
-  }
-
-  .bmc:hover{
-    color:black;
+  .ele-img {
+  width:60%;
+  filter:invert(1)
   }
   
-  .btn-primary{
-    height: 46px !important;
-    border-radius: 10px;
+  .footer-img {
+  align-items:center;
+  background:border-box;
+  display:flex;
+  flex-direction:column;
+  align-items:center
   }
+  
+  .footer-copy {
+  padding-top:10px;
+  width:100%;
+  position:fixed;
+  max-height:min-content;
+  text-align:center
+  }
+  
+  .footer-copy p {
+  font-family:Verdana,Geneva,Tahoma,sans-serif;
+  color:#f5f5f5
+  }
+  
+  .footer-copy a,a:hover {
+  text-decoration:none;
+  color:#c4b093
+  }
+  
+  .bmc-container {
+  position:relative;
+  top:-46px;
+  left:100px
+  }
+  
+  .bmc:hover {
+  color:#000
+  }
+  
+  .btn-primary {
+  height:46px!important;
+  border-radius:10px
+  }
+  
   @media screen and (max-width: 600px) {
-    .bmc-container{
-      width: 100%;
-      margin-top: 70px;
-      left:0px;
-    }
-    .btn-primary{
-      width: 100% !important;
-    }
+  .bmc-container {
+  width:100%;
+  margin-top:70px;
+  left:0
   }
-input[name=fname]{
-  caret-color:pink;
+  
+  .btn-primary {
+  width:100%!important
+  }
+  }
+  
+  input[name=fname] {
+  caret-color:#ffc0cb;
   shape-rendering:optimizeSpeed;
-  color: rgb(109, 104, 104);
-}
-
-input[name=fname]{
-  caret-color:rgb(21, 15, 94);
-  color: rgb(39, 17, 17);
-}
-
-input[type=email]{
-  caret-color:rgb(63, 12, 20);
-  color: rgb(59, 59, 59);
-}
-textarea{
-  caret-color:rgb(148, 58, 6);
-  color: rgb(145, 216, 30);
-}
-
-.row {
-  --bs-gutter-x:-8.5rem;
-}
+  color:#6d6868;
+  caret-color:#150f5e;
+  color:#271111
+  }
+  
+  input[type=email] {
+  caret-color:#3f0c14;
+  color:#3b3b3b
+  }
+  
+  textarea {
+  caret-color:#943a06;
+  color:#91d81e
+  }
+  
+  .row {
+  --bs-gutter-x:-8.5rem
+  }

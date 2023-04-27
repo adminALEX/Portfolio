@@ -1,427 +1,388 @@
-
-.projects{
-   display: flex;
-}
-
-.project{
-    min-height: 20vh;
-    border-radius: 10px;
-    margin-right: 40px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-    transition-property: all smooth;
-}
-
-.project img{
-    border-radius: 20px;
-    height: 60vh;
-}
-.project:nth-child(2){
-    transition-delay: 100ms;
-}
-
-.project:nth-child(3){
-    transition-delay: 300ms;
-}
-
-.project:nth-child(4){
-    transition-delay: 500ms;
-
-}
-
-
-/* card styling starts */
-
-
-.container {
-    position: absolute;
-    height: 600px;
-    width: 1200px;
-    top: 170px;
-    display: flex;
+.projects {
+  display:flex
+  }
+  
+  .project {
+  min-height:20vh;
+  border-radius:10px;
+  margin-right:40px;
+  box-shadow:0 6px 10px rgba(0,0,0,0.25);
+  transition-property:all smooth
+  }
+  
+  .project img {
+  border-radius:20px;
+  height:60vh
+  }
+  
+  .project:nth-child(2) {
+  transition-delay:100ms
+  }
+  
+  .project:nth-child(3) {
+  transition-delay:300ms
+  }
+  
+  .project:nth-child(4) {
+  transition-delay:500ms
+  }
+  
+  .container {
+  position:absolute;
+  height:600px;
+  width:1200px;
+  top:170px;
+  display:flex
   }
   
   .card {
-    display: flex;
-    height: 500px;
-    width: 900px;
-    background-color: #3A3233;
-    border-radius: 10px;
-    box-shadow: -1rem 0 3rem rgb(0, 0, 0);
-  /*   margin-left: -50px; */
-    transition: 0.4s ease-out;
-    position: relative;
-    left: 0px;
+  display:flex;
+  height:500px;
+  width:900px;
+  background-color:#3A3233;
+  border-radius:10px;
+  box-shadow:-1rem 0 3rem #000;
+  transition:.4s ease-out;
+  position:relative;
+  left:0
   }
   
   .card:not(:first-child) {
-      margin-left: -50px;
+  margin-left:-50px
   }
-  .card:hover .title{
-    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
-
+  
+  .card:hover .title {
+  animation:rainbow-text-simple-animation .5s ease-in forwards
   }
   
   .card:hover {
-    transform: translateY(-20px);
-    transition: 0.4s ease-out;
-
+  transform:translateY(-20px);
+  transition:.4s ease-out
   }
   
   .card:hover ~ .card {
-    position: relative;
-    left: 50px;
-    transition: 0.4s ease-out;
+  position:relative;
+  left:50px;
+  transition:.4s ease-out
   }
   
   .title {
-    color: white;
-    font-weight: 300;
-    position: absolute;
-    left: 20px;
-    top: 15px;
+  color:#fff;
+  font-weight:300;
+  position:absolute;
+  left:20px;
+  top:15px
   }
   
   .bar {
-    position: absolute;
-    top: 70px;
-    left: 20px;
-    height: 5px;
-    width: 150px;
+  position:absolute;
+  top:70px;
+  left:20px;
+  height:5px;
+  width:150px
   }
   
   .emptybar {
-    background-color: #2e3033;
-    width: 100%;
-    height: 100%;
+  background-color:#2e3033;
+  width:100%;
+  height:100%
   }
   
   .filledbar {
-    position: absolute;
-    top: 0px;
-    z-index: 3;
-    width: 0px;
-    height: 100%;
-    background: rgb(0,154,217);
-    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
-    transition: 0.6s ease-out;
+  position:absolute;
+  top:0;
+  z-index:3;
+  width:0;
+  height:100%;
+  background:#009ad9;
+  background:linear-gradient(90deg,rgba(0,154,217,1) 0%,rgba(217,147,0,1) 65%,rgba(255,186,0,1) 100%);
+  transition:.6s ease-out
   }
   
   .card:hover .filledbar {
-    width: 150px;
-    transition: 0.4s ease-out;
+  width:150px;
+  transition:.4s ease-out
   }
-
-
   
   .circle {
-    position: absolute;
-    top: 150px;
-    left: calc(50% - 60px);
+  position:absolute;
+  top:150px;
+  left:calc(50% - 60px)
   }
   
   .stroke {
-    stroke: white;
-    stroke-dasharray: 360;
-    stroke-dashoffset: 360;
-    transition: 0.6s ease-out;
+  stroke:#fff;
+  stroke-dasharray:360;
+  stroke-dashoffset:360;
+  transition:.6s ease-out
   }
   
   svg {
-    fill: #17141d;
-    stroke-width: 2px;
+  fill:#17141d;
+  stroke-width:2px
   }
   
   .card:hover .stroke {
-    stroke-dashoffset: 100;
-    transition: 0.6s ease-out;
+  stroke-dashoffset:100;
+  transition:.6s ease-out
   }
-
-  /* card styling ends */
-
-
-
-  /* Inner card styling starts */
-#desc-tech{
-  opacity: 0;
-}
-.details:hover #desc-tech{
-    visibility:visible;
-}
-
-.details{
-  color: white;
-  font-weight: 300;
-  position: absolute;
-  left: 20px;
-  top: 150px;
-}
-
-.details hr{
-  opacity: 0;
-  transform: scale(0);
-  transition: all 1.5s;
-}
-.card:hover hr{
-  transform: scale(100%);
-  opacity: 1;
-}
-
-/* Details animator starts*/
-.details ul{
+  
+  #desc-tech {
+  opacity:0
+  }
+  
+  .details:hover #desc-tech {
+  visibility:visible
+  }
+  
+  .details {
+  color:#fff;
+  font-weight:300;
+  position:absolute;
+  left:20px;
+  top:150px
+  }
+  
+  .details hr {
+  opacity:0;
+  transform:scale(0);
+  transition:all 1.5s
+  }
+  
+  .card:hover hr {
+  transform:scale(100%);
+  opacity:1
+  }
+  
+  .details ul {
   list-style-type:georgian;
-  position: relative;
-}
-.details ul li:nth-child(1){
-  position: absolute;
-}
-.details ul li:nth-child(1):hover ~ li:nth-child(2){
-  top:120px;
-}
-.details ul li:nth-child(2){
+  position:relative
+  }
+  
+  .details ul li:nth-child(1) {
+  position:absolute
+  }
+  
+  .details ul li:nth-child(1):hover ~ li:nth-child(2) {
+  top:120px
+  }
+  
+  .details ul li:nth-child(2) {
   top:40px;
-  position: absolute;
-  transition: all 1s;
-}
-.details ul li:nth-child(2) p{
-  opacity: 0;
-  transition: all 1s;
-}
-.details ul li:nth-child(1) p{
-  opacity: 0;
-  transition: all 1s;
-}
-.details ul li:hover p{
-  opacity: 1;
-}
-/* Details animator ends */
-.logo-container{
-    position: relative;
-    margin-top: 55%;
-    display: flex;
-    max-height: 10vh;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-.gradient-text {
-  /* Fallback: Set a background color. */
-  background-color: #dd8487;
-  filter: brightness(1.4);
-  
-  /* Create the gradient. */
-   background-image: linear-gradient(
-        45deg,
-        #CA4246 16.666%, 
-        #E16541 16.666%, 
-        #E16541 33.333%, 
-        #a79181 33.333%, 
-        #9c8a7b 50%, 
-        #3a4123 50%,
-        rgb(90, 73, 25),
-        #476098 66.666%, 
-        #476098 83.333%,
-        #cf2c0f 83.333%);
-  
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  background-clip: initial;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  
-  /* Animate the text when loading the element. */
-    /* This animates it on page load and when hovering out. */
-    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
-
-}
-
-.gradient-text:hover{
-    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
-}
-
-
-/* Move the background and make it smaller. */
-/* Animation shown when entering the page and after the hover animation. */
-@keyframes rainbow-text-simple-animation-rev {
-    0% {
-        background-size: 650%;
-    }
-    40% {
-        background-size: 650%;
-    }
-    100% {
-        background-size: 100%;
-    }
-}
-
-@keyframes rainbow-text-simple-animation {
-    0% {
-        background-size: 100%;
-    }
-    80% {
-        background-size: 650%;
-    }
-    100% {
-        background-size: 650%;
-    }
-}
-  
-
-
-/* Style the rest of the page. */
-
-header {
-  margin-top: 3em;
-  margin-top: calc(50vh - 3em);
-}
-
-
-
-@media (max-width:1200px) {
-  .last-before-bar{
-    margin-top: 30px;
+  position:absolute;
+  transition:all 1s
   }
-}
-
-@media (max-width:1400px){
-  .last-bar{
-    margin-top: 35px;
+  
+  .details ul li:nth-child(2) p {
+  opacity:0;
+  transition:all 1s
   }
- 
-}
-@media (max-width:170px){
-  .logo-container{
-    min-height: 10vh;
+  
+  .details ul li:nth-child(1) p {
+  opacity:0;
+  transition:all 1s
   }
-}
-
-@media (max-width:1800px){
+  
+  .details ul li:hover p {
+  opacity:1
+  }
+  
+  .logo-container {
+  position:relative;
+  margin-top:55%;
+  display:flex;
+  max-height:10vh;
+  flex-direction:column-reverse;
+  align-items:center
+  }
+  
+  .gradient-text {
+  background-color:#dd8487;
+  filter:brightness(1.4);
+  background-image:linear-gradient(45deg,#CA4246 16.666%,#E16541 16.666%,#E16541 33.333%,#a79181 33.333%,#9c8a7b 50%,#3a4123 50%,#5a4919,#476098 66.666%,#476098 83.333%,#cf2c0f 83.333%);
+  background-size:100%;
+  background-repeat:repeat;
+  background-clip:initial;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:rainbow-text-simple-animation-rev .75s ease forwards
+  }
+  
+  .gradient-text:hover {
+  animation:rainbow-text-simple-animation .5s ease-in forwards
+  }
+  
+  @keyframes rainbow-text-simple-animation-rev {
+  0% {
+  background-size:650%
+  }
+  
+  40% {
+  background-size:650%
+  }
+  
+  100% {
+  background-size:100%
+  }
+  }
+  
+  @keyframes rainbow-text-simple-animation {
+  0% {
+  background-size:100%
+  }
+  
+  80% {
+  background-size:650%
+  }
+  
+  100% {
+  background-size:650%
+  }
+  }
+  
+  header {
+  margin-top:3em;
+  margin-top:calc(50vh - 3em)
+  }
+  
+  @media (max-width:1200px) {
+  .last-before-bar {
+  margin-top:30px
+  }
+  }
+  
+  @media (max-width:1400px) {
+  .last-bar {
+  margin-top:35px
+  }
+  }
+  
+  @media (max-width:170px) {
+  .logo-container {
+  min-height:10vh
+  }
+  }
+  
+  @media (max-width:1800px) {
   .filledbar {
-    transition: none;
+  transition:none
   }
-  .container{
-    position: relative;
-    height: none;
-    width: 900px;
-    top:0px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  
+  .container {
+  position:relative;
+  height:none;
+  width:900px;
+  top:0;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap
   }
-  .card:not(:first-child){
-    margin-left: 0px !important;
+  
+  .card:not(:first-child) {
+  margin-left:0!important
   }
-.card{
-  display: flex;
-  position: absolute !important;
-}
-.container>.card:hover {
-  z-index: calc(100*(var(--n))) !important;
-  transition: all 1s;
-  background-color: #17141d !important; 
-  animation: fade-out .3s linear ;
-}
-
- 
-.container .card:hover:nth-child(n):hover :nth-child(n) {
-  z-index: calc(100*(var(--n))) !important;
-
-}
-.container .card:nth-child(n){
-  z-index: calc(50+var(--n));
-  margin-top: calc(50px * var(--n));
-  background-color: #1B1B1C;
-}
-
-.card:hover {
-  transform: none;
-  transition: none;
-
-}
-.card:hover ~ .card {
-  transition: none;
-  transform: none;
-  left: 0px !important;
-
-}
-
-.card:hover ~ .card {
-  position: relative;
-  left: 0px;
-  transition: none;
-}
-
-.bar{
-  margin-top: 0px;
-}
-
-}
-
-@media (max-width:1500px){
-  .container{
-    position: relative;
-    height: none;
-    width: 900px;
-    top:0px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  
+  .card {
+  display:flex;
+  position:absolute!important
   }
-  .card:not(:first-child){
-    margin-left: 0px !important;
+  
+  .container>.card:hover {
+  z-index:calc(100*(var(--n)))!important;
+  transition:all 1s;
+  background-color:#17141d!important;
+  animation:fade-out .3s linear
   }
-.card{
-  display: flex;
-  position: absolute !important;
-}
-
-.container>.card:hover {
-  z-index: calc(100*(var(--n))) !important;
-  transition: all 1s;
-  background-color: #17141d !important; 
-  animation: fade-out .3s linear ;
-}
- 
-.container .card:hover:nth-child(n):hover :nth-child(n) {
-  z-index: calc(100*(var(--n))) !important;
-
-}
-.container .card:nth-child(n){
-  z-index: calc(50+var(--n));
-  margin-top: calc(50px * var(--n));
-  background-color: #1B1B1C;
-}
-.card:hover {
-  transform: none;
-  transition: none;
-
-}
-.card:hover ~ .card {
-  transition: none;
-  transform: none;
-  left: 0px !important;
-
-}
-
-.card:hover ~ .card {
-  position: relative;
-  left: 0px;
-  transition: none;
-}
-
-}
-
-@media (max-width:1000px){
-  .card{
-    max-width: 100%;
+  
+  .container .card:hover:nth-child(n):hover :nth-child(n) {
+  z-index:calc(100*(var(--n)))!important
   }
-}
-
-@media (max-width:600px){
-  .card{
-    max-width: 50%;
+  
+  .container .card:nth-child(n) {
+  z-index:calc(50+var(--n));
+  margin-top:calc(50px * var(--n));
+  background-color:#1B1B1C
   }
-}
+  
+  .card:hover {
+  transform:none;
+  transition:none
+  }
+  
+  .card:hover ~ .card {
+  transition:none;
+  transform:none;
+  left:0!important;
+  position:relative;
+  left:0;
+  transition:none
+  }
+  
+  .bar {
+  margin-top:0
+  }
+  }
+  
+  @media (max-width:1500px) {
+  .container {
+  position:relative;
+  height:none;
+  width:900px;
+  top:0;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap
+  }
+  
+  .card:not(:first-child) {
+  margin-left:0!important
+  }
+  
+  .card {
+  display:flex;
+  position:absolute!important
+  }
+  
+  .container>.card:hover {
+  z-index:calc(100*(var(--n)))!important;
+  transition:all 1s;
+  background-color:#17141d!important;
+  animation:fade-out .3s linear
+  }
+  
+  .container .card:hover:nth-child(n):hover :nth-child(n) {
+  z-index:calc(100*(var(--n)))!important
+  }
+  
+  .container .card:nth-child(n) {
+  z-index:calc(50+var(--n));
+  margin-top:calc(50px * var(--n));
+  background-color:#1B1B1C
+  }
+  
+  .card:hover {
+  transform:none;
+  transition:none
+  }
+  
+  .card:hover ~ .card {
+  transition:none;
+  transform:none;
+  left:0!important;
+  position:relative;
+  left:0;
+  transition:none
+  }
+  }
+  
+  @media (max-width:1000px) {
+  .card {
+  max-width:100%
+  }
+  }
+  
+  @media (max-width:600px) {
+  .card {
+  max-width:50%
+  }
+  }
